@@ -1,7 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Lesson3" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+    <!-- ✅ НОЧНАЯ ТЕМА (тёмные цвета) -->
+    <style name="Theme.MireaProject" parent="Theme.MaterialComponents.DayNight">
+
+        <!-- Primary brand color (более светлые для ночи) -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primaryContainer</item>
+        <item name="colorOnPrimary">@color/onBackground</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorOnSecondary">@color/onBackground</item>
+
+        <!-- Background / Surface (тёмные) -->
+        <item name="android:colorBackground">@color/background_night</item>
+        <item name="colorSurface">@color/surface_night</item>
+        <item name="colorOnBackground">@color/onBackground_night</item>
+        <item name="colorOnSurface">@color/onSurface_night</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
     </style>
+
+    <!-- Тема без ActionBar -->
+    <style name="Theme.MireaProject.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MireaProject.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Dark" />
+
 </resources>

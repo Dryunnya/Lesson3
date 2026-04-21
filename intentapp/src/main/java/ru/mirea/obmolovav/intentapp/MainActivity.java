@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 String currentTime = sdf.format(new Date(dateInMillis));
 
                 // Ваш номер по списку
-                int myNumber = 14; // ЗАМЕНИТЕ НА СВОЙ НОМЕР!
+                int myNumber = 14;
                 int squaredNumber = myNumber * myNumber;
 
                 // Создаем Intent

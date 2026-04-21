@@ -4,19 +4,17 @@ plugins {
 
 android {
     namespace = "ru.mirea.obmolovav.mireaproject"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 36
+
+    // ✅ ОБНОВЛЕНО: compileSdk 36 (требуется зависимостями)
 
     defaultConfig {
         applicationId = "ru.mirea.obmolovav.mireaproject"
         minSdk = 26
-        targetSdk = 36
+        // ✅ targetSdk можно оставить 34 или обновить до 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -29,9 +27,15 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    // ✅ View Binding
+    buildFeatures {
+        viewBinding = true
     }
 }
 

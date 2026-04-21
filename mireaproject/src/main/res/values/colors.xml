@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Дневные цвета -->
+    <color name="primary">#6750A4</color>
+    <color name="primaryContainer">#EADDFF</color>
+    <color name="onBackground">#1C1B1F</color>
+    <color name="background">#FFFBFE</color>
+    <color name="surface">#FFFBFE</color>
+    <color name="onSurface">#1C1B1F</color>
+
+    <!-- ✅ Ночные цвета (добавьте эти) -->
+    <color name="background_night">#1C1B1F</color>
+    <color name="surface_night">#2D2D2D</color>
+    <color name="onBackground_night">#E6E0E9</color>
+    <color name="onSurface_night">#E6E0E9</color>
 </resources>
